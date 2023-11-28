@@ -1,6 +1,26 @@
+# Background
+Theory: The gravity from the other planets, especially Jupiter, causes the change of the eccentricity.
+
+Problem: Reproduce Milankovitch cycle of eccentricity (100ka)
+
+Method: Use Python
+
+Input: Some initial positions of the planets but no external data
+
+Output: Graph of orbits and a timeseries of an eccentricity parameter
+
+**Development steps**
+
+-   Earth-sun system
+
+-  Add Jupiter
+
+-  Make modular
+
+
 # Planet flowchart
 ```uml
-startuml
+@startuml
 skin rose
 title Planet flowchart
 start
@@ -16,7 +36,8 @@ repeat
 repeat while (simulation time is met) is (no)
 ->yes;
 :figure plotting;
-stop```
+stop
+```
 
 # Pseudo code
 ```code
